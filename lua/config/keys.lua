@@ -330,6 +330,12 @@ M.Fold = {
     ["zm"] = { function ()
         vscode.call("editor.foldAll")
     end, "n", {desc="Fold All Block"} },
+    ["ze"] = { function ()
+        vscode.call("editor.gotoNextFold")
+    end, "n", {desc="Goto Next Fold"} },
+    ["zu"] = { function ()
+        vscode.call("editor.gotoPreviousFold")
+    end, "n", {desc="Goto Pervious Fold"} },
 }
 
 return M
