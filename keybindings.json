@@ -500,7 +500,8 @@
     },
     {
         "key": "tab",
-        "command": "tab"
+        "command": "tab",
+        "when": "neovim.mode == 'insert'"
     },
     {
         "key": "tab",
