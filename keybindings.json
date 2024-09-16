@@ -74,16 +74,6 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "tab",
-        "command": "-insertSnippet",
-        "when": "editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && !inSnippetMode"
-    },
-    {
-        "key": "tab",
-        "command": "-acceptSelectedSuggestion",
-        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
-    },
-    {
         "key": "ctrl+space",
         "command": "-editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
@@ -405,20 +395,8 @@
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": "tab",
-        "command": "editor.action.inlineSuggest.commit"
-    },
-    {
         "key": "alt+7",
         "command": "outline.focus"
-    },
-    {
-        "key": "tab",
-        "command": "jumpToNextSnippetPlaceholder"
-    },
-    {
-        "key": "shift+tab",
-        "command": "jumpToPrevSnippetPlaceholder"
     },
     {
         "key": "alt+3",
@@ -525,7 +503,32 @@
         "command": "tab"
     },
     {
+        "key": "tab",
+        "command": "-insertSnippet",
+        "when": "editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && !inSnippetMode"
+    },
+    {
+        "key": "tab",
+        "command": "-acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
         "key": "alt+9",
         "command": "workbench.view.extension.todo-tree-container"
-    }
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inlineSuggestionVisible && inputFocus"
+    },
+    {
+        "key": "tab",
+        "command": "jumpToNextSnippetPlaceholder",
+        "when": "inSnippetMode && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "jumpToPrevSnippetPlaceholder",
+        "when": "inSnippetMode && textInputFocus"
+    },
 ]
