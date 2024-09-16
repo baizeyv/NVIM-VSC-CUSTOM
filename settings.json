@@ -1,0 +1,355 @@
+{
+    "editor.fontFamily": "'Fira Code'",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "[lua]": {
+        "editor.defaultFormatter": "sumneko.lua"
+    },
+    "vscode_custom_css.imports": [],
+    "animations.Enabled": true,
+    "animations.Install-Method": "Apc Customize UI++",
+    "apc.imports": [
+        "file:///c:/Users/baizeyv/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+    ],
+    "animations.CursorAnimation": true,
+    "animations.Focus-Dimming-Mode": "Full Window",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "vscode-neovim.compositeKeys": {},
+    "window.density.editorTabHeight": "compact",
+    "window.dialogStyle": "custom",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "accessibility.dimUnfocused.enabled": true,
+    "transparent-win.transparency": 0.3,
+    "vscode-neovim.ctrlKeysForInsertMode": [
+        "a",
+        "c",
+        "d",
+        "h",
+        "j",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "w",
+        "b",
+        "e",
+        "f",
+        "g",
+        "i",
+        "k",
+        "l",
+        "n",
+        "p",
+        "q",
+        "s",
+        "v",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete",
+        "g",
+        "n",
+        "p",
+        "q",
+        "s"
+    ],
+    "godotTools.inlayHints.gdscript": true,
+    "editor.inlayHints.padding": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+    "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+    "csharp.inlayHints.enableInlayHintsForTypes": true,
+    "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatDifferOnlyBySuffix": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchArgumentName": true,
+    "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchMethodIntent": true,
+    "javascript.inlayHints.enumMemberValues.enabled": true,
+    "editor.inlayHints.fontSize": 11,
+    "catppuccin.bracketMode": "dimmed",
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        // now for a more complex example
+        {
+            "text": "PASS",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)PASS(\\(\\w+\\))?" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "before": {
+                "contentText": "" // adds text before the highlight
+            },
+            "after": {
+                "contentText": "" // adds text after the highlight
+            },
+            "color": "#1d39c4",
+            "border": "none",
+            "borderRadius": "5px", // NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "#b7eb8f",
+            "diagnosticSeverity": "none", // Set diagnostic severity to `none`, `information`, `warning` or `error`
+            "isWholeLine": true
+        },
+        {
+            "text": "WARNING:",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)WARNING(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "before": {
+                "contentText": "" // adds text before the highlight
+            },
+            "after": {
+                "contentText": "" // adds text after the highlight
+            },
+            "color": "#faad14",
+            "border": "2px solid yellow",
+            "borderRadius": "5px", // NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,0,0)",
+            "diagnosticSeverity": "warning" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+        },
+        {
+            "text": "HACK:",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)HACK(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "before": {
+                "contentText": "" // adds text before the highlight
+            },
+            "after": {
+                "contentText": "" // adds text after the highlight
+            },
+            "color": "#fff",
+            "border": "1px solid #ffd6e7",
+            "borderRadius": "5px", // NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "#ff85c0",
+            "diagnosticSeverity": "warning" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+        },
+        {
+            "text": "FIXME:",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)FIXME(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "before": {
+                "contentText": "" // adds text before the highlight
+            },
+            "after": {
+                "contentText": "" // adds text after the highlight
+            },
+            "color": "#fff",
+            "border": "1px solid #ffd6e7",
+            "borderRadius": "5px", // NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "#ff85c0",
+            "diagnosticSeverity": "warning" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+        },
+        {
+            "text": "WARN:",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)WARN(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "before": {
+                "contentText": "" // adds text before the highlight
+            },
+            "after": {
+                "contentText": "" // adds text after the highlight
+            },
+            "color": "#faad14",
+            "border": "2px solid yellow",
+            "borderRadius": "5px", // NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "rgba(0,0,0,.2)",
+            "diagnosticSeverity": "warning" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+        },
+        {
+            "text": "ERROR:",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)ERROR(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "before": {
+                "contentText": "" // adds text before the highlight
+            },
+            "after": {
+                "contentText": "" // adds text after the highlight
+            },
+            "color": "#fff",
+            "border": "none",
+            "borderRadius": "5px", // NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "red",
+            "diagnosticSeverity": "error" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+        },
+        {
+            "text": "BUG:",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)BUG(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "before": {
+                "contentText": "" // adds text before the highlight
+            },
+            "after": {
+                "contentText": "" // adds text after the highlight
+            },
+            "color": "#fff",
+            "border": "none",
+            "borderRadius": "5px", // NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "red",
+            "diagnosticSeverity": "error" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+        },
+        {
+            "text": "TODO(string):", // with a regex pattern defined, this setting isn't used, but is useful as a name for this section
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)TODO(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+            },
+            "color": "#fff",
+            "border": "1px solid #fff",
+            "borderRadius": "5px", //NOTE: use borderRadius along with `border` or you will see nothing change
+            "backgroundColor": "#5797ff",
+            "diagnosticSeverity": "information", // Set diagnostic severity to `none`, `information`, `warning` or `error`
+            "isWholeLine": false
+        },
+        {
+            "text": "NOTE:", // with a regex pattern defined, this setting isn't used, but is useful as a name for this section
+            "color": "#2e59a7",
+            "backgroundColor": "#bed2bb",
+            "overviewRulerColor": "grey",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)NOTE[:]?(?!\\w)" // in this example, highlight `NOTE:` with or without the `:` and that's not part of another word.  (I.e.: The above will highlight 'NOTE' but not the "note" in 'SIDENOTE').
+                /**
+                 * Positive lookbehind (`(?<=...)`) is only supported in Node.js v9 and up.
+                 * If your VSCode version is built on an earlier version the example above may not work. Simple tests:
+                        * Shouldn't work: note  deNOTEd  NOTEing
+                        * Should work: NOTE:  "NOTE:"
+                 **/
+            },
+            "isWholeLine": true
+        },
+        {
+            "text": "INFO:", // with a regex pattern defined, this setting isn't used, but is useful as a name for this section
+            "color": "#2e59a7",
+            "backgroundColor": "#bed2bb",
+            "overviewRulerColor": "grey",
+            "regex": {
+                "pattern": "(?<=^|\"|\\s)INFO[:]?(?!\\w)" // in this example, highlight `NOTE:` with or without the `:` and that's not part of another word.  (I.e.: The above will highlight 'NOTE' but not the "note" in 'SIDENOTE').
+                /**
+                 * Positive lookbehind (`(?<=...)`) is only supported in Node.js v9 and up.
+                 * If your VSCode version is built on an earlier version the example above may not work. Simple tests:
+                        * Shouldn't work: note  deNOTEd  NOTEing
+                        * Should work: NOTE:  "NOTE:"
+                 **/
+            },
+            "isWholeLine": true
+        },
+    ],
+    //"todohighlight.keywordsPattern": "TODO:|FIXME:|\\(([^\\)]+)\\)", //highlight `TODO:`,`FIXME:` or content between parentheses
+    // NOTE: remember to escape the backslash if there's any in your regexp (using \\\\ instead of single backslash)"
+    // "todohighlight.defaultStyle": {
+    //     "color": "red",
+    //     "backgroundColor": "#ffab00",
+    //     "overviewRulerColor": "#ffab00",
+    //     "cursor": "pointer",
+    //     "border": "1px solid #eee",
+    //     "borderRadius": "2px",
+    //     "isWholeLine": false,
+    //     //other styling properties goes here ... 
+    // },
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.lua",
+        "**/*.cs",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.md",
+        "**/*.mmd",
+        "**/*.markdown",
+        "**/*.mdown",
+        "**/*.txt",
+        "**/*.rb",
+        "**/*.go"
+    ],
+    "todohighlight.exclude": [
+        "**/*.txt",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.vscode-test/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**"
+    ],
+    "todohighlight.maxFilesForSearch": 5120,
+    "todohighlight.toggleURI": false,
+    "todo-tree.general.showActivityBarBadge": true,
+    "todo-tree.general.statusBar": "total",
+    "todo-tree.general.statusBarClickBehaviour": "cycle",
+    "todo-tree.highlights.backgroundColourScheme": [],
+    "todo-tree.highlights.enabled": false,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "PASS",
+        "WARN",
+        "WARNING",
+        "INFO",
+        "NOTE",
+        "ERROR"
+    ]
+}

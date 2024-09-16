@@ -1,0 +1,6 @@
+{
+    "Lua.diagnostics.globals": [
+        "vim"
+    ],
+    "todo-tree.tree.scanMode": "workspace only"
+}
