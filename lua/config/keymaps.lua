@@ -24,6 +24,7 @@ map_specific("Tabs")
 map_specific("LSP")
 map_specific("CMP")
 map_specific("Search")
+map_specific("Fold")
 
 vim.api.nvim_exec_autocmds("User", {
     pattern = "VSC_NVM_KEYMAP",

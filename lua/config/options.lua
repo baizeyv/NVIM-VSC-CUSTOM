@@ -13,6 +13,10 @@ opt.confirm = true -- confirm to save chanegs before exiting modified buffer
 opt.cursorline = true -- enable highlighting of the current line
 opt.expandtab = false -- not use spaces instead of tabs
 opt.foldlevel = 99
+opt.foldmethod = "indent"
+-- opt.foldmethod = "expr"
+-- opt.foldexpr = "v:lua.require'config.utils'.foldexpr()"
+-- opt.foldtext = ""
 opt.ignorecase = true -- ignore case
 opt.inccommand = "nosplit"
 opt.jumpoptions = "view"
@@ -50,3 +54,4 @@ opt.wildmode = "longest:full,full" -- Command-line completion mode
 opt.winminwidth = 5 -- minimum window width
 opt.wrap = true -- enable line wrap
 opt.smoothscroll = true
+vim.cmd("filetype indent off")

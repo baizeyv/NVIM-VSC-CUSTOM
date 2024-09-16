@@ -317,4 +317,19 @@ M.Search = {
     end, "n", { desc = "Search Symbol" } }
 }
 
+M.Fold = {
+    ["zc"] = { function ()
+        vscode.call("editor.fold")
+    end, "n", {desc="Fold Block"} },
+    ["zo"] = { function ()
+        vscode.call("editor.unfold")
+    end, "n", {desc="Unfold Block"} },
+    ["za"] = { function ()
+        vscode.call("editor.unfoldAll")
+    end, "n", {desc="Unfold All Block"} },
+    ["zm"] = { function ()
+        vscode.call("editor.foldAll")
+    end, "n", {desc="Fold All Block"} },
+}
+
 return M
