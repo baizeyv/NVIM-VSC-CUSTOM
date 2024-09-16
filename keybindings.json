@@ -390,11 +390,6 @@
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": "l",
-        "command": "-list.select",
-        "when": "listFocus && !inputFocus"
-    },
-    {
         "key": "alt+7",
         "command": "outline.focus"
     },
@@ -532,4 +527,39 @@
         "command": "jumpToPrevSnippetPlaceholder",
         "when": "inSnippetMode && textInputFocus"
     },
+    {
+        "key": "ctrl+enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "enter",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus && !notebookCellListFocused"
+    },
+    {
+        "key": "enter",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus && !notebookCellListFocused"
+    },
+    {
+        "key": "shift+i",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "l",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus"
+    }
+    {
+        "key": "enter",
+        "command": "enterWithCancelSelection",
+        "when": "listFocus && !inputFocus"
+    }
 ]

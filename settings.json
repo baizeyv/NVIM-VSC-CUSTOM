@@ -351,5 +351,23 @@
         "INFO",
         "NOTE",
         "ERROR"
-    ]
+    ],
+    "multiCommand.commands": [
+        {
+            "command": "enterWithCancelSelection",
+            "interval": 75,
+            "sequence": [
+                {
+                    "command": "list.select",
+                    "onFail": [
+                        "vscode-neovim.escape",
+                    ]
+                },
+                {
+                    "command": "vscode-neovim.escape",
+                },
+            ]
+        },
+    ],
+
 }
