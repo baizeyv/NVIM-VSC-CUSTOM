@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Fira Code'",
+    "editor.fontFamily": "RecMonoCasual Nerd Font Mono, monospace",
     "workbench.settings.applyToAllProfiles": [
         "editor.fontFamily"
     ],
@@ -371,8 +371,7 @@
     ],
     "bookmarks.sideBar.expanded": true,
     "bookmarks.useWorkaroundForFormatters": true,
-    "osumode.explosionSize": 3,
-    "osumode.enableComboImage": false,
+
     "git.openRepositoryInParentFolders": "never",
     "apc.theme": [],
     "better-comments.tags": [
@@ -413,4 +412,5 @@
             "italic": false
         }
     ],
+    "editor.fontLigatures": true,
 }
