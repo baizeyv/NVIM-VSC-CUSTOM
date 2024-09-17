@@ -357,7 +357,7 @@
     {
         "key": "e",
         "command": "list.focusDown",
-        "when": "listFocus && !inputFocus"
+        "when": "listFocus && !editorTextFocus"
     },
     {
         "key": "j",
