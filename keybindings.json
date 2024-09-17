@@ -561,5 +561,9 @@
         "key": "enter",
         "command": "enterWithCancelSelection",
         "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+4",
+        "command": "workbench.view.extension.bookmarks"
     }
 ]

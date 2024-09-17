@@ -369,5 +369,7 @@
             ]
         },
     ],
+    "bookmarks.sideBar.expanded": true,
+    "bookmarks.useWorkaroundForFormatters": true,
 
 }

@@ -2,10 +2,6 @@ return {
     'vscode-neovim/vscode-multi-cursor.nvim',
     event = 'VeryLazy',
     cond = not not vim.g.vscode,
-    opts = {
-        no_selection = false,
-        default_mappings = false
-    },
     config = function(_, opts)
         local cursors = require("vscode-multi-cursor")
         local map = vim.keymap.set
@@ -21,6 +17,9 @@ return {
             { desc = "Create cursor using flash" })
         map({ "n" }, '<C-o>w', cursors.flash_word,
             { desc = "Create selection using flash" })
-        cursors.setup(opts)
+        cursors.setup{
+            default_mappings = false,
+            no_selection = false,
+        }
     end
 }

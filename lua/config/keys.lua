@@ -318,24 +318,72 @@ M.Search = {
 }
 
 M.Fold = {
-    ["zc"] = { function ()
+    ["zc"] = { function()
         vscode.call("editor.fold")
-    end, "n", {desc="Fold Block"} },
-    ["zo"] = { function ()
+    end, "n", { desc = "Fold Block" } },
+    ["zo"] = { function()
         vscode.call("editor.unfold")
-    end, "n", {desc="Unfold Block"} },
-    ["za"] = { function ()
+    end, "n", { desc = "Unfold Block" } },
+    ["za"] = { function()
         vscode.call("editor.unfoldAll")
-    end, "n", {desc="Unfold All Block"} },
-    ["zm"] = { function ()
+    end, "n", { desc = "Unfold All Block" } },
+    ["zm"] = { function()
         vscode.call("editor.foldAll")
-    end, "n", {desc="Fold All Block"} },
-    ["ze"] = { function ()
+    end, "n", { desc = "Fold All Block" } },
+    ["ze"] = { function()
         vscode.call("editor.gotoNextFold")
-    end, "n", {desc="Goto Next Fold"} },
-    ["zu"] = { function ()
+    end, "n", { desc = "Goto Next Fold" } },
+    ["zu"] = { function()
         vscode.call("editor.gotoPreviousFold")
-    end, "n", {desc="Goto Pervious Fold"} },
+    end, "n", { desc = "Goto Pervious Fold" } },
+}
+
+M.Bookmark = {
+    ["]m"] = {
+        function()
+            vscode.call("bookmarks.jumpToNext")
+        end, "n", {
+        desc = "Goto Next Bookmark"
+    }
+    },
+    ["[m"] = {
+        function()
+            vscode.call("bookmarks.jumpToPrevious")
+        end, "n", {
+        desc = "Goto Previous Bookmark"
+    }
+    },
+    ["mm"] = {
+        function()
+            vscode.call("bookmarks.toggle")
+        end,
+        "n", { desc = "Toggle Bookmark" }
+    },
+    ["ma"] = {
+        function()
+            vscode.call("bookmarks.toggleLabeled")
+        end, "n", { desc = "Toggle Labeled Bookmark" }
+    },
+    ["mx"] = {
+        function()
+            vscode.call("bookmarks.clear")
+        end, "n", { desc = "Remove all bookmarks in the current file" }
+    },
+    ["mX"] = {
+        function()
+            vscode.call("bookmarks.clearFromAllFiles")
+        end, "n", { desc = "Remove all bookmarks from all files" }
+    },
+    ["<leader>sm"] = {
+        function()
+            vscode.call("bookmarks.list")
+        end, "n", { desc = "List all bookmarks in the current file" }
+    },
+    ["<leader>sM"] = {
+        function()
+            vscode.call("bookmarks.listFromAllFiles")
+        end, "n", { desc = "List all bookmarks from all files" }
+    }
 }
 
 return M
