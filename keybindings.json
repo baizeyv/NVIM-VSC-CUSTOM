@@ -352,12 +352,12 @@
     {
         "key": "u",
         "command": "list.focusUp",
-        "when": "listFocus && !inputFocus"
+        "when": "listFocus && !inputFocus && !inputFocus"
     },
     {
         "key": "e",
         "command": "list.focusDown",
-        "when": "listFocus && !editorTextFocus"
+        "when": "listFocus && !editorTextFocus && !inputFocus"
     },
     {
         "key": "j",

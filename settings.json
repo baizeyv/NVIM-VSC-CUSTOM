@@ -371,5 +371,7 @@
     ],
     "bookmarks.sideBar.expanded": true,
     "bookmarks.useWorkaroundForFormatters": true,
+    "osumode.explosionSize": 3,
+    "osumode.enableComboImage": false,
 
 }
