@@ -345,11 +345,6 @@
         "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
     },
     {
-        "key": "ctrl+e",
-        "command": "quickInput.next",
-        "when": "inQuickInput && quickInputType == 'quickPick'"
-    },
-    {
         "key": "ctrl+u",
         "command": "-list.focusPageUp",
         "when": "listFocus && !inputFocus"
@@ -412,11 +407,6 @@
         "key": "ctrl+u",
         "command": "search.action.focusPreviousSearchResult",
         "when": "hasSearchResult || inSearchEditor"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "quickInput.previous",
-        "when": "inQuickInput && quickInputType == 'quickPick'"
     },
     {
         "key": "up",
@@ -565,5 +555,20 @@
     {
         "key": "alt+4",
         "command": "workbench.view.extension.bookmarks"
-    }
+    },
+    {
+        "key": "ctrl+u",
+        "command": "focusPreviousRenameSuggestion",
+        "when": "renameInputVisible"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "quickInput.next",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "quickInput.previous",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
 ]
