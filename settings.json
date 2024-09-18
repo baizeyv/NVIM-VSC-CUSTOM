@@ -352,23 +352,6 @@
         "NOTE",
         "ERROR"
     ],
-    "multiCommand.commands": [
-        {
-            "command": "enterWithCancelSelection",
-            "interval": 75,
-            "sequence": [
-                {
-                    "command": "list.select",
-                    "onFail": [
-                        "vscode-neovim.escape",
-                    ]
-                },
-                {
-                    "command": "vscode-neovim.escape",
-                },
-            ]
-        },
-    ],
     "bookmarks.sideBar.expanded": true,
     "bookmarks.useWorkaroundForFormatters": true,
 
@@ -413,4 +396,22 @@
         }
     ],
     "editor.fontLigatures": true,
+    "multiCommand.commands": [
+
+        {
+            "command": "enterWithCancelSelection",
+            "interval": 30,
+            "sequence": [
+                {
+                    "command": "list.select",
+                    "onFail": [
+                        "vscode-neovim.escape",
+                    ]
+                },
+                {
+                    "command": "vscode-neovim.escape",
+                },
+            ]
+        },
+    ],
 }

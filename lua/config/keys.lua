@@ -2,6 +2,37 @@ local M = {}
 
 local vscode = require('vscode')
 
+local previous_mode = 'n'
+
+vim.api.nvim_create_autocmd("ModeChanged", {
+    callback = function()
+        local current_mode = vim.fn.mode()
+        if previous_mode == 'V' and current_mode == 'n' then
+            -- 从 visual-line 模式 切换到 normal mode
+            vim.keymap.set({ "n", "x", "o" }, "e", function()
+                vim.cmd("normal! j")
+                vim.keymap.set({ "n", "x", "o" }, "e", "gj", { remap = true, silent = true })
+            end, { remap = false, silent = true, desc = "Move Down" })
+
+            vim.keymap.set({ "n", "x", "o" }, "u", function()
+                vim.cmd("normal! k")
+                vim.keymap.set({ "n", "x", "o" }, "u", "gk", { remap = true, silent = true })
+            end, { remap = false, silent = true, desc = "Move Down" })
+
+            vim.keymap.set({ "n", "x", "o" }, "E", function()
+                vim.cmd("normal! 5j")
+                vim.keymap.set({ "n", "x", "o" }, "E", "5gj", { remap = true, silent = true })
+            end, { remap = false, silent = true, desc = "Move Down" })
+
+            vim.keymap.set({ "n", "x", "o" }, "U", function()
+                vim.cmd("normal! 5k")
+                vim.keymap.set({ "n", "x", "o" }, "U", "5gk", { remap = true, silent = true })
+            end, { remap = false, silent = true, desc = "Move Down" })
+        end
+        previous_mode = current_mode
+    end
+})
+
 -- lhs = {rhs, modes, opts}
 M.Generic = {
     ["~"] = { "~", { "n", "x" }, { silent = true, desc = "Toggle Case" } },
@@ -82,6 +113,10 @@ M.Generic = {
     ['gm'] = { "M", { "n", "x", "o" }, { desc = "Goto Middle Screen" } },
     [','] = { ",", { "n", "x", "o" }, { desc = "Reverse ftFT" } },
     ['.'] = { ".", { "n" }, { desc = "Repeat Cmd" } },
+    ["e"] = { "gj", { "n", "x", "o" }, { remap = true, silent = true, desc = "Move Down" } },
+    ["u"] = { "gk", { "n", "x", "o" }, { remap = true, silent = true, desc = "Move Down" } },
+    ["E"] = { "5gj", { "n", "x", "o" }, { remap = true, silent = true, desc = "Move Down" } },
+    ["U"] = { "5gk", { "n", "x", "o" }, { remap = true, silent = true, desc = "Move Down" } },
 }
 
 M.Other1 = {
