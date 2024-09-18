@@ -333,7 +333,7 @@
     "todohighlight.maxFilesForSearch": 5120,
     "todohighlight.toggleURI": false,
     "todo-tree.general.showActivityBarBadge": true,
-    "todo-tree.general.statusBar": "top three",
+    "todo-tree.general.statusBar": "current file",
     "todo-tree.general.statusBarClickBehaviour": "cycle",
     "todo-tree.highlights.backgroundColourScheme": [],
     "todo-tree.highlights.enabled": false,

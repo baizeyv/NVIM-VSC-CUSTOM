@@ -571,4 +571,14 @@
         "command": "quickInput.previous",
         "when": "inQuickInput && quickInputType == 'quickPick'"
     },
+    {
+        "key": "tab",
+        "command": "search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
 ]
