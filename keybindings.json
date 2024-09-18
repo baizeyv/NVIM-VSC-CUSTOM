@@ -399,16 +399,6 @@
         "when": "viewContainer.workbench.view.debug.enabled"
     },
     {
-        "key": "ctrl+e",
-        "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
-    },
-    {
         "key": "up",
         "command": "-quickInput.previous",
         "when": "inQuickInput && quickInputType == 'quickPick'"
@@ -580,5 +570,15 @@
         "key": "ctrl+down",
         "command": "-search.focus.nextInputBox",
         "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "search.action.focusSearchFromResults",
+        "when": "accessibilityModeEnabled && searchViewletVisible || firstMatchFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-search.action.focusSearchFromResults",
+        "when": "accessibilityModeEnabled && searchViewletVisible || firstMatchFocus && searchViewletVisible"
     },
 ]
