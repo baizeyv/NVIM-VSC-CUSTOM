@@ -508,16 +508,6 @@
         "when": "inSnippetMode && textInputFocus"
     },
     {
-        "key": "enter",
-        "command": "-list.select",
-        "when": "listFocus && !inputFocus && !treestickyScrollFocused"
-    },
-    {
-        "key": "enter",
-        "command": "-list.select",
-        "when": "listFocus && !inputFocus && !notebookCellListFocused"
-    },
-    {
         "key": "shift+i",
         "command": "list.select",
         "when": "listFocus && !inputFocus"
