@@ -308,7 +308,7 @@ M.LSP = {
         vscode.call('editor.action.codeAction')
     end, { "n" }, { desc = "Show Code Action" } },
     ["<leader>cq"] = { function()
-        vscode.call('problems.action.showQuickFixes')
+        vscode.call('keyboard-quickfix.openQuickFix')
     end, { "n" }, { desc = "Show QuickFix" } },
     ["<leader>cA"] = { function()
         vscode.call('editor.action.sourceAction')

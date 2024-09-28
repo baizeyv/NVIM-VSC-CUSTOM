@@ -11,6 +11,11 @@
     "[lua]": {
         "editor.defaultFormatter": "sumneko.lua"
     },
+    "editor.formatOnSave": false,
+    "[csharp]": {
+        "editor.defaultFormatter": "csharpier.csharpier-vscode",
+        "editor.formatOnSave": true
+    },
     "vscode_custom_css.imports": [],
     "animations.Enabled": true,
     "animations.Install-Method": "Apc Customize UI++",
@@ -333,7 +338,7 @@
     "todohighlight.maxFilesForSearch": 5120,
     "todohighlight.toggleURI": false,
     "todo-tree.general.showActivityBarBadge": true,
-    "todo-tree.general.statusBar": "current file",
+    "todo-tree.general.statusBar": "tags",
     "todo-tree.general.statusBarClickBehaviour": "cycle",
     "todo-tree.highlights.backgroundColourScheme": [],
     "todo-tree.highlights.enabled": false,
@@ -354,7 +359,6 @@
     ],
     "bookmarks.sideBar.expanded": true,
     "bookmarks.useWorkaroundForFormatters": true,
-
     "git.openRepositoryInParentFolders": "never",
     "apc.theme": [],
     "better-comments.tags": [
@@ -397,7 +401,6 @@
     ],
     "editor.fontLigatures": true,
     "multiCommand.commands": [
-
         {
             "command": "enterWithCancelSelection",
             "interval": 150,
@@ -415,4 +418,27 @@
         },
     ],
     "editor.accessibilitySupport": "off",
+    "android.sdkLocation": "C:\\Users\\baizeyv\\AppData\\Local\\Android\\Sdk",
+    "gitlens.ai.experimental.model": "openai:gpt-4o",
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "window.menuBarVisibility": "compact",
+    "workbench.layoutControl.enabled": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "editor.suggest.preview": true,
+    "editor.suggest.localityBonus": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.codeLensFontSize": 10,
+    "editor.defaultColorDecorators": true,
+    "editor.lineNumbers": "relative",
+    "editor.renderFinalNewline": "dimmed",
+    "editor.renderLineHighlight": "all",
+    "editor.suggest.showStatusBar": true,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "unity-code-snippets.style": "allman",
+    "vsintellicode.modify.editor.suggestSelection": "disabled",
 }
