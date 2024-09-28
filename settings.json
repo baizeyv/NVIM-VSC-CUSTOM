@@ -441,4 +441,5 @@
     },
     "unity-code-snippets.style": "allman",
     "vsintellicode.modify.editor.suggestSelection": "disabled",
+    "editor.inlineSuggest.enabled": false,
 }
