@@ -16,9 +16,10 @@
         "editor.defaultFormatter": "csharpier.csharpier-vscode",
         "editor.formatOnSave": true
     },
-    "vscode_custom_css.imports": [],
+    "vscode_custom_css.imports": [
+        "file:///c:/Users/baizeyv/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
+    ],
     "animations.Enabled": true,
-    "animations.Install-Method": "Apc Customize UI++",
     "apc.imports": [
         "file:///c:/Users/baizeyv/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
     ],
@@ -429,7 +430,6 @@
     "editor.suggest.preview": true,
     "editor.suggest.localityBonus": true,
     "editor.suggest.snippetsPreventQuickSuggestions": true,
-    "editor.wordWrap": "wordWrapColumn",
     "editor.codeLensFontSize": 10,
     "editor.defaultColorDecorators": true,
     "editor.lineNumbers": "relative",
