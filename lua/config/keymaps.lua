@@ -26,6 +26,7 @@ map_specific("CMP")
 map_specific("Search")
 map_specific("Fold")
 map_specific("Bookmark")
+map_specific("ZenMode")
 
 vim.api.nvim_exec_autocmds("User", {
     pattern = "VSC_NVM_KEYMAP",

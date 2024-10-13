@@ -37,7 +37,7 @@ opt.showmode = false -- dont show mode since we have a statusline
 opt.sidescrolloff = 10 -- columns of context
 opt.signcolumn = "yes" --  always show the signcolumn, otherwise it would shift the text each time
 opt.smartcase = true -- dont ignore case with capitals
-opt.smartindent = true -- insert indents automatically
+opt.smartindent = false -- insert indents automatically -- 这里用false是为了使用vsc自带的缩进的，否则o,O会有缩进错误
 opt.spelllang = { "en", "zh" }
 opt.spelloptions:append("noplainbuffer")
 opt.splitbelow = true -- put new windows below current

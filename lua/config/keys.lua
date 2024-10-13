@@ -421,4 +421,13 @@ M.Bookmark = {
     }
 }
 
+M.ZenMode = {
+    ["<leader>zz"] = {
+        function ()
+            vscode.call("workbench.action.toggleZenMode")
+        end,
+        "n",{desc="Toggle Zen Mode"}
+    }
+}
+
 return M

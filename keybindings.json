@@ -350,16 +350,6 @@
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": "u",
-        "command": "list.focusUp",
-        "when": "listFocus && !inputFocus && !inputFocus"
-    },
-    {
-        "key": "e",
-        "command": "list.focusDown",
-        "when": "listFocus && !editorTextFocus && !inputFocus"
-    },
-    {
         "key": "j",
         "command": "-list.focusDown",
         "when": "listFocus && !inputFocus"
@@ -367,16 +357,6 @@
     {
         "key": "k",
         "command": "-list.focusUp",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "shift+u",
-        "command": "list.focusUp",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "shift+e",
-        "command": "list.focusDown",
         "when": "listFocus && !inputFocus"
     },
     {
@@ -644,5 +624,61 @@
         "key": "ctrl+u",
         "command": "selectPrevCodeAction",
         "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "alt+oem_plus",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "alt+oem_minus",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "shift+e",
+        "command": "listFocusDownQuick",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "shift+u",
+        "command": "listFocusUpQuick",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "e",
+        "command": "listFocusDown",
+        "when": "listFocus && !editorTextFocus && !inputFocus"
+    },
+    {
+        "key": "u",
+        "command": "listFocusUp",
+        "when": "listFocus && !inputFocus && !editorTextFocus"
+    },
+    {
+        "key": "alt+0",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "alt+0",
+        "command": "workbench.view.extension.project-manager"
+    },
+    {
+        "key": "alt+oem_5",
+        "command": "workbench.view.extension.codegeex-sidebar"
     }
 ]
