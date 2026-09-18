@@ -1,10 +1,9 @@
-vim.keymap.set("","<space>","<nop>")
+vim.keymap.set("", "<space>", "<nop>")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.g.clipboard = vim.g.vscode_clipboard
+if vim.g.vscode then vim.g.clipboard = vim.g.vscode_clipboard end
 
 local opt = vim.opt
-
 opt.autowrite = true -- enable auto write
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
 opt.completeopt = "menu,menuone,noselect"
@@ -29,16 +28,19 @@ opt.pumblend = 10 -- popup blend
 opt.pumheight = 10 -- maximum number of entries in a popup
 opt.relativenumber = true -- relative line numbers
 opt.scrolloff = 5 -- lines of context
-opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize", "help", "globals", "skiprtp", "folds" }
+opt.sessionoptions = {
+    "buffers", "curdir", "tabpages", "winsize", "help", "globals", "skiprtp",
+    "folds"
+}
 opt.shiftround = true -- round indent
 opt.shiftwidth = 2 -- size of an indent
-opt.shortmess:append({ W = true, I = true, c = true, C = true })
+opt.shortmess:append({W = true, I = true, c = true, C = true})
 opt.showmode = false -- dont show mode since we have a statusline
 opt.sidescrolloff = 10 -- columns of context
 opt.signcolumn = "yes" --  always show the signcolumn, otherwise it would shift the text each time
 opt.smartcase = true -- dont ignore case with capitals
-opt.smartindent = false -- insert indents automatically -- 这里用false是为了使用vsc自带的缩进的，否则o,O会有缩进错误
-opt.spelllang = { "en", "zh" }
+opt.smartindent = true -- insert indents automatically
+opt.spelllang = {"en", "zh"}
 opt.spelloptions:append("noplainbuffer")
 opt.splitbelow = true -- put new windows below current
 opt.splitkeep = "screen"
@@ -55,3 +57,4 @@ opt.winminwidth = 5 -- minimum window width
 opt.wrap = true -- enable line wrap
 opt.smoothscroll = true
 vim.cmd("filetype indent off")
+
