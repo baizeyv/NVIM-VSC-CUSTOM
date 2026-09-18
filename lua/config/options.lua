@@ -57,4 +57,3 @@ opt.winminwidth = 5 -- minimum window width
 opt.wrap = true -- enable line wrap
 opt.smoothscroll = true
 vim.cmd("filetype indent off")
-

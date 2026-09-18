@@ -41,4 +41,3 @@ unmap_specific("Rubbish")
 
 local fast_move = require("config.fast-cursor-move")
 fast_move.setup()
-

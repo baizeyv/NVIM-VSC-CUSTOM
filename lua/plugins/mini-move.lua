@@ -1,27 +1,27 @@
 return {
-  {
-    "echasnovski/mini.move",
-    event = "VeryLazy",
-    opts = {
-      -- Module mappings. Use `''` (empty string) to disable one.
-      mappings = {
-        -- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
-        left = '<M-n>',
-        right = '<M-i>',
-        down = '<M-e>',
-        up = '<M-u>',
-        -- Move current line in Normal mode
-        line_left = '<M-n>',
-        line_right = '<M-i>',
-        line_down = '<M-e>',
-        line_up = '<M-u>',
-      },
+	"nvim-mini/mini.move",
+	version = "*",
+	keys = { "<A-n>", "<A-i>", "<A-e>", "<A-u>" },
+	opts = {
+		-- Module mappings. Use `''` (empty string) to disable one.
+		mappings = {
+			-- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
+			left = "<A-n>",
+			right = "<A-i>",
+			down = "<A-e>",
+			up = "<A-u>",
 
-      -- Options which control moving behavior
-      options = {
-        -- Automatically reindent selection during linewise vertical move
-        reindent_linewise = true,
-      },
-    },
-  },
+			-- Move current line in Normal mode
+			line_left = "<A-n>",
+			line_right = "<A-i>",
+			line_down = "<A-e>",
+			line_up = "<A-u>",
+		},
+
+		-- Options which control moving behavior
+		options = {
+			-- Automatically reindent selection during linewise vertical move
+			reindent_linewise = true,
+		},
+	},
 }

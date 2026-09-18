@@ -12,4 +12,3 @@ end
 
 require('config').setup()
 require('config.plugin-loader').load()
-
